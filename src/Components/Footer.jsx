@@ -3,10 +3,10 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <footer class="border-t-2 border-border">
-                <div class="max-w-screen-xl mx-auto px-4 py-4 md:px-0 md:py-8 flex justify-between items-center">
-                    <div class="text-sm md:text-normal">© Copyright 2024</div>
-                    <div class="flex items-center gap-2">
+            <footer className="border-t-2 border-border">
+                <div className="max-w-screen-xl mx-auto px-4 py-4 md:px-0 md:py-8 flex justify-between items-center">
+                    <div className="text-sm md:text-normal">© Copyright 2024</div>
+                    <div className="flex items-center gap-2">
                         <a target="_blank" title="Github" href="https://github.com/Jasmeet5108">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="18" cy="18" r="17.5" stroke="#AEAEAE"></circle>
@@ -21,8 +21,8 @@ const Footer = () => {
                         </a>
                         <a target="_blank" title="Twitter" href="https://twitter.com/JasmeetSingh752">
                             <svg width="36" height="36" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17L11.1935 12.8065M17 7L12.8065 11.1935M12.8065 11.1935L9.77778 7H7L11.1935 12.8065M12.8065 11.1935L17 17H14.2222L11.1935 12.8065" stroke="#7B7B7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#AEAEAE" stroke-width="0.7" />
+                                <path d="M7 17L11.1935 12.8065M17 7L12.8065 11.1935M12.8065 11.1935L9.77778 7H7L11.1935 12.8065M12.8065 11.1935L17 17H14.2222L11.1935 12.8065" stroke="#7B7B7B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#AEAEAE" strokeWidth="0.7" />
                             </svg>
                         </a>
                     </div>

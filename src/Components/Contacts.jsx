@@ -6,13 +6,13 @@ const Contacts = () => {
             <h2 className='font-bold text-3xl blue-gradient_text mt-28 px-6 max-w-screen-xl mx-auto'>Contact</h2>
             <section id='contact' className='px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto'>
                 <div className='lg:w-[40%]'>
-                    <h2 class="mt-4 text-2xl font-extrabold tracking-wide mb-2">Get in touch</h2>
+                    <h2 className="mt-4 text-2xl font-extrabold tracking-wide mb-2">Get in touch</h2>
                     <p className='text-[gray] text-[15px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
                         valuable connections. Let's connect!</p>
                     <p className='mt-2 text-[gray] text-[15px]'>You can send an e-mail or fill out the form.</p>
 
                     <div className='mt-6 '>
-                        <p class="mb-4 text-lg font-bold">Contact me via social</p>
+                        <p className="mb-4 text-lg font-bold">Contact me via social</p>
                         <div className='flex items-center gap-2'>
                             <a target="_blank" title="Github link" href="https://github.com/Jasmeet5108">
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,14 +30,14 @@ const Contacts = () => {
 
                             <a target="_blank" title="Twitter link" href="https://twitter.com/JasmeetSingh752">
                                 <svg width="36" height="36" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L11.1935 12.8065M17 7L12.8065 11.1935M12.8065 11.1935L9.77778 7H7L11.1935 12.8065M12.8065 11.1935L17 17H14.2222L11.1935 12.8065" stroke="#7B7B7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#AEAEAE" stroke-width="0.7" />
+                                    <path d="M7 17L11.1935 12.8065M17 7L12.8065 11.1935M12.8065 11.1935L9.77778 7H7L11.1935 12.8065M12.8065 11.1935L17 17H14.2222L11.1935 12.8065" stroke="#7B7B7B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#AEAEAE" strokeWidth="0.7" />
                                 </svg>
                             </a>
                         </div>
                     </div>
                     <div className='mt-6 '>
-                        <p class="mb-4 text-lg font-bold">Contact me via email</p>
+                        <p className="mb-4 text-lg font-bold">Contact me via email</p>
                         <a className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] transition text-white rounded p-2 hover:cursor-pointer' href="mailto:jasmeet5108k@gmail.com">Tap to send an email</a>
                     </div>
                 </div>
@@ -45,18 +45,18 @@ const Contacts = () => {
                     <form>
                         <div id="name" className='flex flex-col'>
                             <label htmlFor="name">Name</label>
-                            <input type="text" class="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
+                            <input type="text" className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
                         </div>
                         <div id="email" className='flex flex-col mt-4'>
                             <label htmlFor="email">Email</label>
-                            <input type="email" class="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
+                            <input type="email" className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
                         </div>
                         <div id='textarea' className='mt-4'>
                             <label htmlFor="message">Message</label>
-                            <textarea class="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows="5">
+                            <textarea className="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows="5">
                             </textarea>
                         </div>
-                        <button type="submit" class="w-full py-4 px-6 mt-4 text-base font-semibold rounded-lg transition-colors duration-300 bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] text-white">Send Message</button>
+                        <button type="submit" className="w-full py-4 px-6 mt-4 text-base font-semibold rounded-lg transition-colors duration-300 bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] text-white">Send Message</button>
                     </form>
                 </div>
             </section>
