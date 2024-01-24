@@ -37,3 +37,10 @@
 .animate-fade-up {
     animation: fade-up 1s ease forwards
 }
+
+.svg{
+    /* background-color:; */
+    border: 2px solid #7B7B7B;
+    padding: 4px;
+    border-radius: 20px;
+}
