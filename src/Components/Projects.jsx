@@ -34,7 +34,7 @@ const Projects = () => {
                     <img src="Images/Movie-Streaming-Img.jpg" alt="Movie Image" className='rounded-md w-full border md:w-[350px]' />
                     <div className='md:flex md:flex-col md:space-y-4 md:justify-center'>
                         <p className='mt-4 text-2xl text-center md:text-left font-semibold blue-gradient_text'>Movie Streaming App</p>
-                        <p className='text-lg mt-4 text-center md:pr-2 md:w-[350px] md:text-left'>A movie straming app made using Reactjs and TailwindCSS. Deployed on Vercel</p>
+                        <p className='text-lg mt-4 text-center md:pr-2 md:w-[350px] md:text-left'>A movie streaming app made using Reactjs and TailwindCSS. Deployed on Vercel</p>
                         <div id="buttons" className='mt-5 flex justify-center md:justify-start space-x-5'>
                             <a href='https://github.com/Jasmeet5108/Movie-Streaming-App' target='_blank' className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] transition text-white rounded p-2 hover:cursor-pointer'>Code on Github</a>
                             <a href='https://movie-streaming-app-ten.vercel.app' target='_blank' className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] transition text-white rounded p-2 hover:cursor-pointer'>See live version</a>

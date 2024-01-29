@@ -11,9 +11,9 @@ const Skills = () => {
                         <p className='sm:mt-2 text-lg sm:text-xl'>HTML, CSS, JS, ReactJs, Tailwind CSS</p>
                     </div>
 
-                    <div className="box2 py-2 flex flex-col justify-center w-[330px] sm:w-[400px] sm:h-[120px] mt-10 border-2 border-gray-600 text-center">
+                    <div className="box2 py-2 flex flex-col justify-center w-[330px] sm:w-[470px] sm:h-[120px] mt-10 border-2 border-gray-600 text-center">
                         <h3 className='font-bold text-xl blue-gradient_text sm:text-2xl'>Backend Development</h3>
-                        <p className='sm:mt-2 text-lg sm:text-xl'>Django, MySQL</p>
+                        <p className='sm:mt-2 text-lg sm:text-xl'>NodeJs, ExpressJs, MongoDB, Django, MySQL</p>
                     </div>
 
                 </div>
