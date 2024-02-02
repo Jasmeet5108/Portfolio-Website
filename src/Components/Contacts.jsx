@@ -12,9 +12,9 @@ const Contacts = () => {
             <section id='contact' className='px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto'>
                 <div className='lg:w-[40%]'>
                     <h2 className="mt-4 text-2xl font-extrabold tracking-wide mb-2">Get in touch</h2>
-                    <p className='text-[#7f9bae] text-[15px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
+                    <p className='text-[#7f9bae] text-[15px] lg:text-[18px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
                         valuable connections. Let's connect!</p>
-                    <p className='mt-2 text-[#7f9bae] text-[15px]'>You can send an e-mail or fill out the form.</p>
+                    <p className='mt-2 text-[#7f9bae] text-[15px] lg:text-[18px]'>You can send an e-mail or fill out the form.</p>
 
                     <div className='mt-6 '>
                         <p className="mb-4 text-lg font-bold">Contact me via social</p>
@@ -39,7 +39,7 @@ const Contacts = () => {
                     </div>
                     <div className='mt-6 '>
                         <p className="mb-4 text-lg font-bold">Contact me via email</p>
-                        <a className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] transition text-white rounded p-2 hover:cursor-pointer' href="mailto:jasmeet5108k@gmail.com">Tap to send an email</a>
+                        <a className='gradient-box text-white rounded p-2 hover:cursor-pointer' href="mailto:jasmeet5108k@gmail.com">Tap to send an email</a>
                     </div>
                 </div>
                 <div id="form" className='my-16 lg:w-[500px]'>
@@ -57,7 +57,7 @@ const Contacts = () => {
                             <textarea className="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows="5">
                             </textarea>
                         </div>
-                        <button type="submit" onClick={handleSubmit} className="w-full py-4 px-6 mt-4 text-base font-semibold rounded-lg transition-colors duration-300 bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff] text-white">Send Message</button>
+                        <button type="submit" onClick={handleSubmit} className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
                     </form>
                 </div>
             </section>

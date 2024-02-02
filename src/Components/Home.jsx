@@ -12,7 +12,8 @@ const Home = () => {
                         Explore my projects to see how I bring designs to life through creative blends.
                     </p>
                     <div className='mt-8 sm:mt-4'>
-                        <a href="#projects" className='rounded-full py-2 px-4 hover:cursor-pointer text-base text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff]'>See Projects <span className='ml-2 mb-2'>&#8595;</span> </a>
+                        {/* <a href="#projects" className='rounded-full py-2 px-4 hover:cursor-pointer text-base text-white bg-gradient-to-r transition duration-500 from-[#00c6ff] to-[#0072ff] hover:from-[#0072ff] hover:to-[#00c6ff]'>See Projects <span className='ml-2 mb-2'>&#8595;</span> </a> */}
+                        <a href="#projects" className='py-2 px-4 hover:cursor-pointer text-base text-white gradient-box'>See Projects <span className='ml-2 mb-2'>&#8595;</span> </a>
                     </div>
                 </div>
                 <div className="right mt-16">

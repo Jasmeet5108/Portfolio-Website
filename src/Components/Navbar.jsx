@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className='bg-gradient-to-r from-[#0072ff] to-[#00c6ff] px-2 sticky top-0 z-10'>
+            <header className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] px-2 sticky top-0 z-10'>
                 <nav className='flex h-14 justify-between max-w-screen-xl mx-auto items-center text-white'>
                     <div className="left flex justify-center items-center space-x-2">
                         <a href='#' className='text-2xl cursor-pointer'>Jasmeet</a>
@@ -55,10 +55,10 @@ const Navbar = () => {
 
                         </label>
                         <ul className="right hidden sm:flex space-x-8 text-xl">
-                            <a href='#' className='cursor-pointer text-[#e0e2e4] hover:text-white'>Home</a>
-                            <a href='#skills' className='cursor-pointer text-[#e0e2e4] hover:text-white'>Skills</a>
-                            <a href='#projects' className='cursor-pointer text-[#e0e2e4] hover:text-white'>Projects</a>
-                            <a href='#contact' className='cursor-pointer text-[#e0e2e4] hover:text-white'>Contact</a>
+                            <a href='#' className='cursor-pointer transition hover:underline hover:underline-offset-4 text-[#e2e7ed] hover:text-white'>Home</a>
+                            <a href='#skills' className='cursor-pointer transition hover:underline hover:underline-offset-4 text-[#e2e7ed] hover:text-white'>Skills</a>
+                            <a href='#projects' className='cursor-pointer transition hover:underline hover:underline-offset-4 text-[#e2e7ed] hover:text-white'>Projects</a>
+                            <a href='#contact' className='cursor-pointer transition hover:underline hover:underline-offset-4 text-[#e2e7ed] hover:text-white'>Contact</a>
                         </ul>
 
                         <div className="hamburger mt-[2px] flex flex-col space-y-[6px] sm:hidden" onClick={toggleMenu}>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
                 </nav>
             </header>
-            <div className={`sideMenu z-10 sticky top-14 sm:hidden bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-center text-white ${className} transition-all duration-[400ms]`}>
+            <div className={`sideMenu z-10 sticky top-14 sm:hidden bg-gradient-to-r from-[#0072ff] to-[#00c6ff] text-center text-white ${className} transition-all duration-[400ms]`}>
                 <ul className='flex flex-col space-y-3 py-2 text-lg'>
                     <a href='#'>Home</a>
                     <a href='#skills'>Skills</a>

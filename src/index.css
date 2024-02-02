@@ -44,3 +44,16 @@
     padding: 3.5px;
     border-radius: 20px;
 }
+
+.gradient-box {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transition: all 1s ease; /* Smooth transition for the background property */
+
+    /* Additional styling for demonstration purposes */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-box:hover {
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* New gradient on hover */
+}
