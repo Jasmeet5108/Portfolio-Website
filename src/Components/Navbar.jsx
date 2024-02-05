@@ -59,13 +59,13 @@ const Navbar = () => {
                                 <a href='#' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Home</a>
                             </li>
                             <li className='border-b-2 border-b-transparent hover:border-b-white transition-all duration-500'>
-                                <a href='#' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Skills</a>
+                                <a href='#skills' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Skills</a>
                             </li>
                             <li className='border-b-2 border-b-transparent hover:border-b-white transition-all duration-500'>
-                                <a href='#' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Projects</a>
+                                <a href='#projects' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Projects</a>
                             </li>
                             <li className='border-b-2 border-b-transparent hover:border-b-white transition-all duration-500'>
-                                <a href='#' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Contact</a>
+                                <a href='#contact' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Contact</a>
                             </li>
                         </ul>
 
