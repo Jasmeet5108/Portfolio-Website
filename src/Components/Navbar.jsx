@@ -78,12 +78,12 @@ const Navbar = () => {
 
                 </nav>
             </header>
-            <div className={`sideMenu z-10 sticky top-14 sm:hidden bg-gradient-to-r from-[#0072ff] to-[#00c6ff] text-center text-white ${className} transition-all duration-[400ms]`}>
+            <div className={`sideMenu z-10 sticky top-14 sm:hidden bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-center text-white ${className} transition-all duration-[400ms]`}>
                 <ul className='flex flex-col space-y-3 py-2 text-lg'>
-                    <a href='#'>Home</a>
-                    <a href='#skills'>Skills</a>
-                    <a href='#projects'>Projects</a>
-                    <a href='#contact'>Contact</a>
+                    <a href='#' onClick={toggleMenu}>Home</a>
+                    <a href='#skills' onClick={toggleMenu}>Skills</a>
+                    <a href='#projects' onClick={toggleMenu}>Projects</a>
+                    <a href='#contact' onClick={toggleMenu}>Contact</a>
                 </ul>
             </div>
         </>
