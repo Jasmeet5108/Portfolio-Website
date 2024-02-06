@@ -18,7 +18,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div id="Hosting" className='mt-12 border shadow-xl bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
+                <div id="Hosting" className='mt-12 md:mt-24 border shadow-xl bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
                     <img src="Images/Web-Hosting-Img.jpg" alt="Web Hosting Image" className='rounded-md w-full border md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                     <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                         <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>Web Hosting</p>
@@ -30,7 +30,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div id="Movie Streaming" className='mt-12 border shadow-xl bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
+                <div id="Movie Streaming" className='mt-12 md:mt-24 border shadow-xl bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
                     <img src="Images/Movie-Streaming-Img.jpg" alt="Movie Image" className='rounded-md w-full border md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                     <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                         <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>Movie Streaming App</p>

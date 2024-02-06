@@ -32,7 +32,7 @@ const Skills = () => {
 
                     </div>
 
-                    <div className="box2 rounded-md shadow-xl py-1 flex flex-col justify-center ph:w-[300px] ph:h-24 w-[330px] sm:w-[400px] b-pad:w-[360px] h-28 b-pad:h-32 lg:w-[431px] md:w-[450px] md:h-[140px] lg:h-[140px] sm:h-[120px] mt-10 lg:mt-0 border-2 border-gray-600 text-center">
+                    <div className="box2 rounded-md shadow-xl py-1 flex flex-col justify-center ph:w-[300px] ph:h-24 w-[330px] sm:w-[400px] b-pad:w-[360px] h-28 b-pad:h-32 lg:w-[431px] md:w-[450px] md:h-[140px] lg:h-[140px] sm:h-[120px] mt-12 lg:mt-0 border-2 border-gray-600 text-center">
                         <h3 className='font-bold text-xl blue-gradient_text b-pad:text-2xl'>Backend Development</h3>
                         <p className='sm:mt-2 flex justify-center gap-3 lg:gap-6'>
 
