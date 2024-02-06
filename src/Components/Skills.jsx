@@ -6,7 +6,7 @@ const Skills = () => {
             <h2 className='font-bold text-3xl blue-gradient_text mt-28 px-6 max-w-screen-xl mx-auto'>Skills</h2>
             <section id='skills' className='max-w-screen-xl mx-auto'>
                 <div className="skills flex flex-col lg:flex-row lg:gap-20 lg:items-baseline justify-center items-center mt-8 px-4">
-                    <div className="box1 shadow-xl py-1 flex flex-col justify-center ph:w-[300px] ph:h-24 w-[330px] sm:w-[400px] md:w-[450px] md:h-[140px] b-pad:w-[360px] sm:h-[120px] h-28 b-pad:h-32 lg:w-[431px] border-2 border-gray-600 text-center">
+                    <div className="box1 rounded-md shadow-xl py-1 flex flex-col justify-center ph:w-[300px] ph:h-24 w-[330px] sm:w-[400px] md:w-[450px] md:h-[140px] b-pad:w-[360px] sm:h-[120px] h-28 b-pad:h-32 lg:w-[431px] border-2 border-gray-600 text-center">
                         <h3 className='font-bold text-xl blue-gradient_text b-pad:text-2xl'>Frontend Development</h3>
                         <p className='mt-1 sm:mt-2 lg:mt-4 flex justify-center gap-3 lg:gap-6'>
                             <svg className='ph:w-8 b-pad:w-[50px]' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" viewBox="0 0 48 48">
@@ -32,7 +32,7 @@ const Skills = () => {
 
                     </div>
 
-                    <div className="box2 shadow-xl py-1 flex flex-col justify-center ph:w-[300px] ph:h-24 w-[330px] sm:w-[400px] b-pad:w-[360px] h-28 b-pad:h-32 lg:w-[431px] md:w-[450px] md:h-[140px] lg:h-[140px] sm:h-[120px] mt-10 lg:mt-0 border-2 border-gray-600 text-center">
+                    <div className="box2 rounded-md shadow-xl py-1 flex flex-col justify-center ph:w-[300px] ph:h-24 w-[330px] sm:w-[400px] b-pad:w-[360px] h-28 b-pad:h-32 lg:w-[431px] md:w-[450px] md:h-[140px] lg:h-[140px] sm:h-[120px] mt-10 lg:mt-0 border-2 border-gray-600 text-center">
                         <h3 className='font-bold text-xl blue-gradient_text b-pad:text-2xl'>Backend Development</h3>
                         <p className='sm:mt-2 flex justify-center gap-3 lg:gap-6'>
 
