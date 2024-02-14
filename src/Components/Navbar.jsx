@@ -70,15 +70,15 @@ const Navbar = () => {
                         </ul>
 
                         <div className="hamburger mt-[2px] flex flex-col space-y-[6px] sm:hidden" onClick={toggleMenu}>
-                            <span className={`line bg-white w-9 h-1 rounded-md transition-all duration-300 ${className === '-translate-x-0' ? "translate-y-[9px]" : "translate-y-0"} ${className === '-translate-x-0' ? "rotate-45" : "rotate-0"} `}></span>
-                            <span className={`line bg-white w-9 h-1 rounded-md transition-all duration-300 ${className === '-translate-x-0' ? "hidden" : ""}`}></span>
-                            <span className={`line bg-white w-9 h-1 rounded-md transition-all duration-300 ${className === '-translate-x-0' ? "-translate-y-[1px]" : "-translate-y-0"} ${className === '-translate-x-0' ? "-rotate-45" : "-rotate-0"} `}></span>
+                            <span className={`line bg-white w-9 h-1 rounded-md transition-all duration-[400ms] ${className === '-translate-x-0' ? "translate-y-[10px]" : "translate-y-0"} ${className === '-translate-x-0' ? "rotate-45" : "rotate-0"} `}></span>
+                            <span className={`line bg-white w-9 h-1 rounded-md transition-all duration-[400ms] ${className === '-translate-x-0' ? "-translate-x-5 opacity-0" : ""}`}></span>
+                            <span className={`line bg-white w-9 h-1 rounded-md transition-all duration-[400ms] ${className === '-translate-x-0' ? "-translate-y-[10px]" : "-translate-y-0"} ${className === '-translate-x-0' ? "-rotate-45" : "-rotate-0"} `}></span>
                         </div>
                     </div>
 
                 </nav>
             </header>
-            <div className={`sideMenu z-10 sticky top-14 sm:hidden bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-center text-white ${className} transition-all duration-[400ms]`}>
+            <div className={`sideMenu z-10 sticky top-14 sm:hidden bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-center text-white ${className} transition-all duration-[500ms]`}>
                 <ul className='flex flex-col space-y-3 py-2 text-lg'>
                     <a href='#' onClick={toggleMenu}>Home</a>
                     <a href='#skills' onClick={toggleMenu}>Skills</a>
