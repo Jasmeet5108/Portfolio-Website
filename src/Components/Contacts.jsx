@@ -1,10 +1,26 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react';
 
 const Contacts = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value })
     }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post("http://localhost:9000/form", formData).then(() => { console.log("Data submitted successfully") }).catch(() => { console.log("Couldn't submit data successfully") })
+        } catch (error) {
+            console.log(error)
+        }
+    };
 
     return (
         <>
@@ -46,15 +62,15 @@ const Contacts = () => {
                     <form>
                         <div id="name" className='flex flex-col'>
                             <label htmlFor="name">Name</label>
-                            <input type="text" className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
+                            <input type="text" onChange={handleChange} name='name' className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
                         </div>
                         <div id="email" className='flex flex-col mt-4'>
                             <label htmlFor="email">Email</label>
-                            <input type="email" className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
+                            <input type="email" onChange={handleChange} name='email' className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
                         </div>
                         <div id='textarea' className='mt-4'>
                             <label htmlFor="message">Message</label>
-                            <textarea className="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows="5">
+                            <textarea name='message' onChange={handleChange} className="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows="5">
                             </textarea>
                         </div>
                         <button type="submit" onClick={handleSubmit} className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
