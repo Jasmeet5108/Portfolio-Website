@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Contacts = () => {
 
@@ -16,7 +18,16 @@ const Contacts = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:9000/form", formData).then(() => { console.log("Data submitted successfully") }).catch(() => { console.log("Couldn't submit data successfully") })
+            await axios.post("http://localhost:9000/form", formData)
+            toast.success("Message sent successfully", {
+                duration: 2000,
+                position: 'top-center',
+                className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+                // style: {
+                //     minWidth: '250px',
+                // }
+            })
+
         } catch (error) {
             console.log(error)
         }
@@ -75,6 +86,7 @@ const Contacts = () => {
                         </div>
                         <button type="submit" onClick={handleSubmit} className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
                     </form>
+                    <Toaster />
                 </div>
             </section>
         </>
