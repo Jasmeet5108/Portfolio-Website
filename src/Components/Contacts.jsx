@@ -21,7 +21,7 @@ const Contacts = () => {
         // await axios.post("http://localhost:9000/form", formData)
         toast.success("Message sent successfully", {
             duration: 2000,
-            position: 'top-center',
+            position: 'bottom-center',
             className: "mt-8 text-base lg:text-lg lg:w-[400px]",
         })
 
