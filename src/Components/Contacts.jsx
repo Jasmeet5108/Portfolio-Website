@@ -17,20 +17,17 @@ const Contacts = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            await axios.post("http://localhost:9000/form", formData)
-            toast.success("Message sent successfully", {
-                duration: 2000,
-                position: 'top-center',
-                className: "mt-8 text-base lg:text-lg lg:w-[400px]",
-                // style: {
-                //     minWidth: '250px',
-                // }
-            })
+        // try {
+        // await axios.post("http://localhost:9000/form", formData)
+        toast.success("Message sent successfully", {
+            duration: 2000,
+            position: 'top-center',
+            className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+        })
 
-        } catch (error) {
-            console.log(error)
-        }
+        // } catch (error) {
+        //     console.log(error)
+        // }
     };
 
     return (
