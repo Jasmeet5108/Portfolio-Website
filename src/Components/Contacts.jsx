@@ -22,7 +22,7 @@ const Contacts = () => {
         toast.success("Message sent successfully", {
             duration: 2000,
             position: 'bottom-center',
-            className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+            className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
         })
 
         // } catch (error) {
