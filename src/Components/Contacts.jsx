@@ -17,17 +17,17 @@ const Contacts = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // try {
-        // await axios.post("http://localhost:9000/form", formData)
-        toast.success("Message sent successfully", {
-            duration: 2000,
-            position: 'bottom-center',
-            className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
-        })
+        try {
+            await axios.post("http://localhost:9000/form", formData)
+            toast.success("Message sent successfully", {
+                duration: 2000,
+                position: 'bottom-center',
+                className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
+            })
 
-        // } catch (error) {
-        //     console.log(error)
-        // }
+        } catch (error) {
+            console.log(error)
+        }
     };
 
     return (
