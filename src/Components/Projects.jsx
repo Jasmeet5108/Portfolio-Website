@@ -6,7 +6,7 @@ const Projects = () => {
             <h2 className='font-bold text-3xl blue-gradient_text mt-28 px-6 max-w-screen-xl mx-auto'>Projects</h2>
             <section id='projects' className='px-6 mt-8 max-w-screen-xl mx-auto md:flex md:flex-col md:items-center'>
 
-                <div id='Calculator' className='border-2 custom-shadow-projects bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 mt-4 rounded-md'>
+                <div id='Calculator' className='border custom-shadow-projects bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 mt-4 rounded-md'>
                     <img src="Images/calculator-Img.jpg" alt="Calculator Image" className='rounded-md w-full md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                     <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                         <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>Simple Calculator</p>
@@ -18,7 +18,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div id="Hosting" className='mt-12 md:mt-24 border-2 custom-shadow-projects bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
+                <div id="Hosting" className='mt-12 md:mt-24 border custom-shadow-projects bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
                     <img src="Images/Web-Hosting-Img.jpg" alt="Web Hosting Image" className='rounded-md w-full border md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                     <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                         <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>Web Hosting</p>
@@ -30,7 +30,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div id="Movie Streaming" className='mt-12 md:mt-24 border-2 custom-shadow-projects bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
+                <div id="Movie Streaming" className='mt-12 md:mt-24 border custom-shadow-projects bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
                     <img src="Images/Movie-Streaming-Img.jpg" alt="Movie Image" className='rounded-md w-full border md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                     <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                         <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>Movie Streaming App</p>
