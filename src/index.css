@@ -18,6 +18,14 @@
     /* Adjust colors as needed */
 }
 
+.custom-shadow-skills {
+    box-shadow: 7px 7px 10px #000608;
+}
+
+.custom-shadow-projects {
+    box-shadow: 4px 4px 8px #000608;
+}
+
 .blue-gradient_text {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
 }
@@ -38,7 +46,7 @@
     animation: fade-up 1s ease forwards
 }
 
-.svg{
+.svg {
     /* background-color:; */
     border: 2px solid #8992a3;
     padding: 3.5px;
@@ -47,7 +55,8 @@
 
 .gradient-box {
     background: linear-gradient(45deg, #0072ff, #00c6ff);
-    transition: all 1s ease; /* Smooth transition for the background property */
+    transition: all 1s ease;
+    /* Smooth transition for the background property */
 
     /* Additional styling for demonstration purposes */
     border-radius: 10px;
@@ -55,5 +64,6 @@
 }
 
 .gradient-box:hover {
-    background: linear-gradient(45deg, #00c6ff, #0072ff); /* New gradient on hover */
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    /* New gradient on hover */
 }
