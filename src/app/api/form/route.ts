@@ -1,9 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
+import { connectToDB } from "../../../../helpers/db-connect";
+import User from "../../../../models/user-model";
 
-export function GET(request: NextRequest) {
-    return NextResponse.json({ msg: "working on /form" })
+connectToDB(process.env.MONGODB_URI)
+
+export async function GET(request: NextRequest) {
+    const allData = await User.find()
+    return NextResponse.json({ msg: "working on /form", data: allData })
 }
 
-export function POST(request: NextRequest) {
-
+export async function POST(request: NextRequest) {
+    const { name, email, message } = await request.json()
+    const newUser = await User.create({ name, email, message })
+    console.log(newUser);
+    return NextResponse.json({ msg: "Success", NewUser: newUser })
 }

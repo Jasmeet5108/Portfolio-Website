@@ -1,5 +1,6 @@
 "use client"
 import React, { useRef } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
     const nameRef = useRef<HTMLInputElement>(null)
@@ -8,12 +9,42 @@ const Contact = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
+
         const data = {
             name: nameRef.current?.value,
             email: emailRef.current?.value,
             message: messageRef.current?.value
         }
-        console.log(data);
+
+        try {
+            const response = await fetch('/api/form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                if (nameRef.current) nameRef.current.value = "";
+                if (emailRef.current) emailRef.current.value = "";
+                if (messageRef.current) messageRef.current.value = "";
+                toast.success("Message sent successfully", {
+                    duration: 2000,
+                    position: 'bottom-center',
+                    className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+                })
+            }
+
+            console.log(response);
+
+        } catch (error) {
+            toast.error("Message not sent. please try again later", {
+                duration: 2000,
+                position: 'bottom-center',
+                className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+            })
+        }
     }
 
     return (
@@ -73,7 +104,7 @@ const Contact = () => {
                         </div>
                         <button type="submit" className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
                     </form>
-                    {/* <Toaster /> */}
+                    <Toaster />
                 </div>
             </section>
         </>
