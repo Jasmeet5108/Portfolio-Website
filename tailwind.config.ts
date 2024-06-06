@@ -36,9 +36,6 @@ const config: Config = {
       '2xl': '1536px', // (min-width: 1536px) 
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light", "dark"]
-  }
+  plugins: [],
 };
 export default config;

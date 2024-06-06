@@ -1,8 +1,10 @@
 "use client"
 import React, { useRef } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { useTheme } from '../../context/ThemeContext';
 
 const Contact = () => {
+    const { theme, lightTheme } = useTheme();
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
@@ -50,12 +52,12 @@ const Contact = () => {
     return (
         <>
             <h2 className='font-bold text-3xl blue-gradient_text mt-24 px-6 max-w-screen-xl mx-auto'>Contact</h2>
-            <section id='contact' className='px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto'>
+            <section id='contact' className={`${theme === lightTheme ? "text-black" : "text-[#a6adbb]"} px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto`}>
                 <div className='lg:w-[40%]'>
                     <h2 className="mt-4 text-2xl font-extrabold tracking-wide mb-2">Get in touch</h2>
-                    <p className='text-[#7f9bae] text-[15px] lg:text-[18px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
+                    <p className='text-[15px] lg:text-[18px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
                         valuable connections. Let's connect!</p>
-                    <p className='mt-2 text-[#7f9bae] text-[15px] lg:text-[18px]'>You can send an e-mail or fill out the form.</p>
+                    <p className='mt-2 text-[15px] lg:text-[18px]'>You can send an e-mail or fill out the form.</p>
 
                     <div className='mt-6 '>
                         <p className="mb-4 text-lg font-bold">Contact me via social</p>
