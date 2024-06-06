@@ -1,10 +1,8 @@
 "use client"
 import React, { useRef } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import { useTheme } from '../../context/ThemeContext';
 
 const Contact = () => {
-    const { theme, lightTheme } = useTheme();
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
@@ -34,7 +32,7 @@ const Contact = () => {
                 toast.success("Message sent successfully", {
                     duration: 2000,
                     position: 'bottom-center',
-                    className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+                    className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
                 })
             }
 
@@ -44,7 +42,7 @@ const Contact = () => {
             toast.error("Message not sent. please try again later", {
                 duration: 2000,
                 position: 'bottom-center',
-                className: "mt-8 text-base lg:text-lg lg:w-[400px]",
+                className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
             })
         }
     }
@@ -52,7 +50,7 @@ const Contact = () => {
     return (
         <>
             <h2 className='font-bold text-3xl blue-gradient_text mt-24 px-6 max-w-screen-xl mx-auto'>Contact</h2>
-            <section id='contact' className={`${theme === lightTheme ? "text-black" : "text-[#a6adbb]"} px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto`}>
+            <section id='contact' className={`px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto`}>
                 <div className='lg:w-[40%]'>
                     <h2 className="mt-4 text-2xl font-extrabold tracking-wide mb-2">Get in touch</h2>
                     <p className='text-[15px] lg:text-[18px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build

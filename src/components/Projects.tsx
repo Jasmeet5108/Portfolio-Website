@@ -1,16 +1,12 @@
-"use client"
 import Image from 'next/image'
 import React from 'react'
-import { useTheme } from '../../context/ThemeContext'
 
 const Projects = () => {
-
-    const { theme, lightTheme } = useTheme();
 
     return (
         <>
             <h2 className='font-bold text-3xl blue-gradient_text mt-28 px-6 max-w-screen-xl mx-auto'>Projects</h2>
-            <section id='projects' className={`${theme === lightTheme ? "text-black" : "text-[#a6adbb]"} px-6 mt-8 max-w-screen-xl mx-auto md:flex md:flex-col md:items-center`}>
+            <section id='projects' className={`px-6 mt-8 max-w-screen-xl mx-auto md:flex md:flex-col md:items-center`}>
                 <div id="Hosting" className='mt-12 md:mt-4 border bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
                     <Image width={300} height={200} src="/Images/Web-Hosting-Img.jpg" alt="Web Hosting Image" className='rounded-md w-full border border-slate-500 md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                     <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>

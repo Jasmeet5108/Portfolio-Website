@@ -1,11 +1,9 @@
 "use client"
 import React, { useState } from 'react'
-import { useTheme } from '../../context/ThemeContext'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Navbar = () => {
     const [open, setOpen] = useState<boolean>(false)
-    const { theme, toggleTheme, lightTheme } = useTheme()
 
     const toggleMenu = () => {
         setOpen(prev => !prev)
@@ -20,9 +18,9 @@ const Navbar = () => {
                     </div>
 
                     <div className='flex space-x-4 sm:space-x-4 items-center'>
-                        <div>
+                        {/* <div>
                             <Image src={`/Images/${theme === lightTheme ? "moon.png" : "sun.png"}`} onClick={toggleTheme} className='invert cursor-pointer' width={26} height={26} alt='Icon' />
-                        </div>
+                        </div> */}
                         <ul className="right hidden sm:flex space-x-8 text-xl">
                             <li className='border-b-2 border-b-transparent hover:border-b-white transition-all duration-500'>
                                 <a href='#' className='cursor-pointer transition text-[#e2e7ed] hover:text-white'>Home</a>
