@@ -36,8 +36,6 @@ const Contact = () => {
                 })
             }
 
-            console.log(response);
-
         } catch (error) {
             toast.error("Message not sent. please try again later", {
                 duration: 2000,
