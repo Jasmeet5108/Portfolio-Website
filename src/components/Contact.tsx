@@ -82,7 +82,10 @@ const Contact = () => {
                                 ref={nameRef}
                                 type="text"
                                 name='name'
-                                className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
+                                className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600"
+                                required
+                            />
+
                         </div>
                         <div id="email" className='flex flex-col mt-4'>
                             <label htmlFor="email">Email</label>
@@ -90,14 +93,18 @@ const Contact = () => {
                                 ref={emailRef}
                                 type="email"
                                 name='email'
-                                className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600" />
+                                className="w-full py-2 px-4 text-base font-normal border border-border rounded-md focus:outline-none focus:border-gray-600"
+                                required
+                            />
                         </div>
                         <div id='textarea' className='mt-4'>
                             <label htmlFor="message">Message</label>
                             <textarea
                                 ref={messageRef}
                                 name='message'
-                                className="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows={5}>
+                                className="w-full py-2 px-4 text-base font-normal border rounded-md focus:outline-none focus:border-gray-600" rows={5}
+                                required
+                            >
                             </textarea>
                         </div>
                         <button type="submit" className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
