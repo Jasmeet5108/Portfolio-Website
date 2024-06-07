@@ -32,7 +32,7 @@ const Contact = () => {
                 toast.success("Message sent successfully", {
                     duration: 2000,
                     position: 'top-center',
-                    className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
+                    className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
                 })
             }
 
@@ -40,7 +40,7 @@ const Contact = () => {
             toast.error("Message couldn't be sent. please try again later", {
                 duration: 2000,
                 position: 'top-center',
-                className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
+                className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
             })
         }
     }
