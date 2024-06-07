@@ -31,15 +31,15 @@ const Contact = () => {
                 if (messageRef.current) messageRef.current.value = "";
                 toast.success("Message sent successfully", {
                     duration: 2000,
-                    position: 'bottom-center',
+                    position: 'top-center',
                     className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
                 })
             }
 
         } catch (error) {
-            toast.error("Message not sent. please try again later", {
+            toast.error("Message couldn't be sent. please try again later", {
                 duration: 2000,
-                position: 'bottom-center',
+                position: 'top-center',
                 className: "mt-8 text-white bg-black text-base lg:text-lg lg:w-[400px]",
             })
         }
@@ -102,7 +102,15 @@ const Contact = () => {
                         </div>
                         <button type="submit" className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
                     </form>
-                    <Toaster />
+                    <Toaster
+                        toastOptions={{
+                            className: '',
+                            style: {
+                                color: 'white',
+                                backgroundColor: "black"
+                            },
+                        }}
+                    />
                 </div>
             </section>
         </>
