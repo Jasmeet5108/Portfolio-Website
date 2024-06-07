@@ -6,7 +6,7 @@ connectToDB(process.env.MONGODB_URI)
 
 export async function GET(request: NextRequest) {
     const allData = await User.find()
-    return NextResponse.json({ msg: "working on /form", data: allData })
+    return NextResponse.json({ msg: "working on /api/form", data: allData })
 }
 
 export async function POST(request: NextRequest) {
