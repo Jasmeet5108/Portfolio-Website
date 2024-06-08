@@ -5,21 +5,21 @@ const Projects = () => {
 
     const Projects = [
         {
-            imageURL: "Todo-App-Img.jpg",
+            imageURL: "Todo-App-Img",
             title: "Todo App",
             description: "A Todo app with CRUD operations, ensuring seamless task management and persistent data storage across reloads created using ReactJs & TailwindCSS. Deployed on Vercel",
             githubURL: "Todo-App",
             liveURL: "todo-list-creator"
         },
         {
-            imageURL: "Movie-Streaming-Img.jpg",
+            imageURL: "Movie-Streaming-Img",
             title: "Movie Streaming App",
             description: "A movie streaming app fetching and displaying real time movies and TV shows made using Reactjs and TailwindCSS. Deployed on Vercel",
             githubURL: "Movie-Streaming-App",
             liveURL: "movie-streaming-app-ten"
         },
         {
-            imageURL: "Web-Hosting-Img.jpg",
+            imageURL: "Web-Hosting-Img",
             title: "Web Hosting",
             description: "A personal project regarding web Hosting made using HTML, CSS, Javascript. Deployed on Vercel",
             githubURL: "Web-Hosting-Project",
@@ -34,7 +34,7 @@ const Projects = () => {
 
                 {Projects.map((project, index) => (
                     <div key={index} className='mt-6 md:mt-8 border bmd:w-[800px] bmd:h-[300px] blg:w-[1150px] blg:h-[400px] border-gray-500 flex flex-col md:flex-row-reverse md:justify-between p-4 rounded-md'>
-                        <Image width={300} height={200} src={`/Images/${project.imageURL}`} alt="Web Hosting Image" className='rounded-md w-full border border-slate-500 md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
+                        <Image width={300} height={200} src={`/Images/${project.imageURL}.jpg`} alt="Web Hosting Image" className='rounded-md w-full border border-slate-500 md:w-[350px] bmd:w-[400px] blg:w-[600px]' />
                         <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                             <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>{project.title}</p>
                             <p className='text-base blg:text-xl blg:w-[450px] mt-4 text-center md:pr-2 md:w-[350px] md:text-left'>{project.description}</p>
