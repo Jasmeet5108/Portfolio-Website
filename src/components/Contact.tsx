@@ -29,7 +29,7 @@ const Contact = () => {
                 if (nameRef.current) nameRef.current.value = "";
                 if (emailRef.current) emailRef.current.value = "";
                 if (messageRef.current) messageRef.current.value = "";
-                toast.success("Message sent successfully", {
+                toast.success("Message delivered", {
                     duration: 2000,
                     position: 'top-center',
                     className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
