@@ -5,7 +5,7 @@ const Hero = () => {
 
     return (
         <>
-            <section id="home" className={`max-w-screen-xl mx-auto animate-fade-up mt-[-120px] sm:mt-[60px] flex flex-col md:flex-row md:justify-between md:items-center md:px-4 lg:px-1 md:mt-7 w-full`}>
+            <section id="home" className={`max-w-screen-xl mx-auto animate-fade-up mt-[-120px] sm:mt-[60px] flex flex-col md:flex-row md:justify-between md:items-center md:px-4 lg:px-1 md:mt-0 w-full`}>
                 <div className="left text-3xl text-left md:text-3xl lg:text-4xl xl:text-5xl px-[10px]">
                     <p>Hi, I am <span className='blue-gradient_text'>Jasmeet Singh</span></p>
                     <p>A Passionate <span className='blue-gradient_text'>Web Developer</span></p>

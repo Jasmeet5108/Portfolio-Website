@@ -51,7 +51,7 @@ const Contact = () => {
             <section id='contact' className={`px-6 flex flex-col lg:flex-row lg:justify-between max-w-screen-xl mx-auto`}>
                 <div className='lg:w-[40%]'>
                     <h2 className="mt-4 text-2xl font-extrabold tracking-wide mb-2">Get in touch</h2>
-                    <p className='text-[15px] lg:text-[18px] lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
+                    <p className='text-[15px] lg:text-lg lg:w-[80%]'>I'm always happy to hear about exciting opportunities, and build
                         valuable connections. Let's connect!</p>
                     <p className='mt-2 text-[15px] lg:text-[18px]'>You can send an e-mail or fill out the form.</p>
 
