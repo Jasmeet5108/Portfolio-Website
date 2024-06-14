@@ -56,9 +56,6 @@
 
 .gradient-box {
     background: linear-gradient(45deg, #1973d1, #061993);
-    transition: all 1s ease;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .gradient-box:hover {

@@ -1,15 +1,19 @@
 "use client"
-import React, { useRef } from 'react';
+import Image from 'next/image';
+import React, { useRef, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
+
+    const [loading, setLoading] = useState<boolean>(false)
+
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-
+        setLoading(true)
         const data = {
             name: nameRef.current?.value,
             email: emailRef.current?.value,
@@ -26,15 +30,15 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                if (nameRef.current) nameRef.current.value = "";
-                if (emailRef.current) emailRef.current.value = "";
-                if (messageRef.current) messageRef.current.value = "";
                 toast.success("Message delivered", {
                     duration: 2000,
                     position: 'top-center',
                     className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
                 })
             }
+            if (nameRef.current) nameRef.current.value = "";
+            if (emailRef.current) emailRef.current.value = "";
+            if (messageRef.current) messageRef.current.value = "";
 
         } catch (error) {
             toast.error("Message couldn't be sent. please try again later", {
@@ -43,6 +47,7 @@ const Contact = () => {
                 className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
             })
         }
+        setLoading(false)
     }
 
     return (
@@ -107,7 +112,11 @@ const Contact = () => {
                             >
                             </textarea>
                         </div>
-                        <button type="submit" className="w-full py-4 px-6 mt-4 text-base font-semibold transition-colors duration-300 gradient-box rounded p-2 hover:cursor-pointer text-white">Send Message</button>
+                        <button disabled={loading} type="submit" className={`w-full flex justify-center py-4 px-6 mt-4 text-base shadow-lg font-semibold transition ${loading ? "bg-gray-400 cursor-not-allowed" : "cursor-pointer gradient-box"} rounded-[10px] p-2 text-white`}>
+                            <p>
+                                {loading ? <Image src="/Images/my-loader.gif" width={35} height={5} alt="Loader" /> : "Send Message"}
+                            </p>
+                        </button>
                     </form>
                     <Toaster
                         toastOptions={{
