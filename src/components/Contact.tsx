@@ -112,11 +112,13 @@ const Contact = () => {
                             >
                             </textarea>
                         </div>
-                        <button disabled={loading} type="submit" className={`w-full flex justify-center py-4 px-6 mt-4 text-base shadow-lg font-semibold transition ${loading ? "bg-gray-400 cursor-not-allowed" : "cursor-pointer gradient-box"} rounded-[10px] p-2 text-white`}>
-                            <p>
-                                {loading ? <Image src="/Images/my-loader.gif" width={35} height={5} alt="Loader" /> : "Send Message"}
-                            </p>
+
+                        <button type="submit" className={`w-full flex justify-center py-4 px-6 mt-4 text-base shadow-lg font-semibold transition ${loading ? "bg-gray-400 cursor-not-allowed" : "cursor-pointer gradient-box"} rounded-[10px] p-2 text-white`}>
+                            {loading ? <Image className='text-center w-10' src="/Images/my-loader.gif" width={10} height={10} alt="Loader" /> :
+                                <p>Send Message</p>
+                            }
                         </button>
+
                     </form>
                     <Toaster
                         toastOptions={{
