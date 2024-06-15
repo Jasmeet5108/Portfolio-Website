@@ -16,6 +16,10 @@
     box-shadow: 4px 4px 10px #000608;
 }
 
+.hero-gradient-text{
+    @apply bg-gradient-to-r from-[#56c8e8] to-[#0072ff] bg-clip-text text-transparent;
+}
+
 .blue-gradient_text {
     @apply bg-gradient-to-r from-[#0072ff] to-[#56c8e8] bg-clip-text text-transparent;
 }

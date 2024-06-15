@@ -7,8 +7,8 @@ const Hero = () => {
         <>
             <section id="home" className={`max-w-screen-xl mx-auto animate-fade-up mt-[-120px] sm:mt-[60px] flex flex-col md:flex-row md:justify-between md:items-center md:px-4 lg:px-1 md:mt-0 w-full`}>
                 <div className="left text-3xl text-left md:text-3xl lg:text-4xl xl:text-5xl px-[10px]">
-                    <p>Hi, I am <span className='blue-gradient_text'>Jasmeet Singh</span></p>
-                    <p>A Passionate <span className='blue-gradient_text'>Web Developer</span></p>
+                    <p>Hi, I am <span className='hero-gradient-text'>Jasmeet Singh</span></p>
+                    <p>A Passionate <span className='hero-gradient-text'>Web Developer</span></p>
                     <p className='text-base lg:text-lg xl:text-xl mt-6 w-full md:w-[400px] lg:w-[600px] xl:w-[800px] md:mt-6 lg:mt-8 xl:mt-10'>I enjoy developing creative applications.
                         <br />
                         Explore my projects to see how I bring designs to life through creative blends.
