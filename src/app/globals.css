@@ -17,7 +17,7 @@
 }
 
 .blue-gradient_text {
-    @apply bg-gradient-to-r from-[#56c8e8] to-[#0072ff] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#0072ff] to-[#56c8e8] bg-clip-text text-transparent;
 }
 
 @keyframes fade-up {
@@ -56,6 +56,7 @@
 
 .gradient-box {
     background: linear-gradient(45deg, #1973d1, #061993);
+    border-radius: 10px;
 }
 
 .gradient-box:hover {

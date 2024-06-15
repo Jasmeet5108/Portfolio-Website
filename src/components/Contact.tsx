@@ -76,7 +76,7 @@ const Contact = () => {
                     </div>
                     <div className='mt-6 '>
                         <p className="mb-4 text-lg font-bold">Contact me via email</p>
-                        <a className='gradient-box text-white rounded p-2 hover:cursor-pointer' href="mailto:jasmeet5108k@gmail.com">Tap to send an email</a>
+                        <a className='gradient-box text-white rounded py-2 px-3 hover:cursor-pointer' href="mailto:jasmeet5108k@gmail.com">Tap to send an email</a>
                     </div>
                 </div>
                 <div id="form" className='my-16 lg:w-[500px]'>
