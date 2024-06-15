@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
-    const [loading, setLoading] = useState<boolean>(true)
+    const [loading, setLoading] = useState<boolean>(false)
 
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
