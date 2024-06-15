@@ -12,8 +12,8 @@ const Contact = () => {
     const messageRef = useRef<HTMLTextAreaElement>(null)
 
     const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault()
         setLoading(true)
+        e.preventDefault()
         const data = {
             name: nameRef.current?.value,
             email: emailRef.current?.value,
@@ -113,11 +113,17 @@ const Contact = () => {
                             </textarea>
                         </div>
 
-                        <button type="submit" className={`w-full flex justify-center py-4 px-6 mt-4 text-base shadow-lg font-semibold transition ${loading ? "bg-gray-400 cursor-not-allowed" : "cursor-pointer gradient-box"} rounded-[10px] p-2 text-white`}>
-                            {loading ? <Image className='text-center w-10' src="/Images/my-loader.gif" width={10} height={10} alt="Loader" /> :
-                                <p>Send Message</p>
-                            }
-                        </button>
+                        {
+                            loading ?
+                                <div className='flex justify-center'>
+                                    <Image className='text-center w-32' src="/Images/straight-loader.gif" width={10} height={10} alt="Loader" />
+                                </div>
+
+                                :
+                                <button type="submit" className={`w-full flex justify-center py-4 px-6 mt-4 text-base shadow-lg font-semibold transition ${loading ? "bg-gray-400 cursor-not-allowed" : "cursor-pointer gradient-box"} rounded-[10px] p-2 text-white`}>
+                                    <p>Send Message</p>
+                                </button>
+                        }
 
                     </form>
                     <Toaster
