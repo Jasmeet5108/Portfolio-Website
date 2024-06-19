@@ -10,6 +10,7 @@ const Contact = () => {
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
+    const formRef = useRef<HTMLFormElement>(null)
 
     const handleSubmit = async (e: React.FormEvent) => {
         setLoading(true)
@@ -36,9 +37,7 @@ const Contact = () => {
                     className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
                 })
             }
-            if (nameRef.current) nameRef.current.value = "";
-            if (emailRef.current) emailRef.current.value = "";
-            if (messageRef.current) messageRef.current.value = "";
+            formRef.current?.reset()
 
         } catch (error) {
             toast.error("Message couldn't be sent. please try again later", {
@@ -80,7 +79,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div id="form" className='my-16 lg:w-[500px]'>
-                    <form onSubmit={handleSubmit}>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                         <div id="name" className='flex flex-col'>
                             <label htmlFor="name">Name</label>
                             <input
