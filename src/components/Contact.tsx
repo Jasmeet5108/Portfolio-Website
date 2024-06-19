@@ -32,7 +32,7 @@ const Contact = () => {
 
             if (response.ok) {
                 toast.success("Message delivered", {
-                    duration: 2000,
+                    duration: 2500,
                     position: 'top-center',
                     className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
                 })
@@ -41,7 +41,7 @@ const Contact = () => {
 
         } catch (error) {
             toast.error("Message couldn't be sent. please try again later", {
-                duration: 2000,
+                duration: 2500,
                 position: 'top-center',
                 className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
             })
