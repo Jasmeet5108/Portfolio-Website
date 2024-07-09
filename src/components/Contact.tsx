@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = useState<boolean>(true)
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
@@ -114,7 +114,7 @@ const Contact = () => {
                         {
                             loading ?
                                 <div className='flex justify-center my-5'>
-                                    <Image className='w-32' src="/Images/straight-loader-ready.gif" width={10} height={10} alt="Loader" />
+                                    <Image className='w-28' src="/Images/straight-loader-ready.gif" width={10} height={10} alt="Loader" />
                                 </div>
 
                                 :
