@@ -6,7 +6,6 @@ import toast, { Toaster } from 'react-hot-toast';
 const Contact = () => {
 
     const [loading, setLoading] = useState<boolean>(false)
-
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
@@ -34,7 +33,7 @@ const Contact = () => {
                 toast.success("Message delivered", {
                     duration: 2500,
                     position: 'top-center',
-                    className: "mt-12 text-white bg-black text-lg w-[250px] lg:text-xl lg:w-[500px]",
+                    className: "mt-12 text-white bg-black text-base w-[250px] lg:text-xl lg:w-[500px]",
                 })
             }
             formRef.current?.reset()
