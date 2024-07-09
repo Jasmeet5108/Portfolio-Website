@@ -34,7 +34,7 @@ const Contact = () => {
                 toast.success("Message delivered", {
                     duration: 2500,
                     position: 'top-center',
-                    className: "mt-8 lg:mt-10 text-white bg-black text-base lg:text-xl lg:w-[500px]",
+                    className: "mt-12 text-white bg-black text-lg w-[250px] lg:text-xl lg:w-[500px]",
                 })
             }
             formRef.current?.reset()
@@ -114,8 +114,8 @@ const Contact = () => {
 
                         {
                             loading ?
-                                <div className='flex justify-center'>
-                                    <Image className='w-32' src="/Images/straight-loader.gif" width={10} height={10} alt="Loader" />
+                                <div className='flex justify-center my-5'>
+                                    <Image className='w-32' src="/Images/straight-loader-ready.gif" width={10} height={10} alt="Loader" />
                                 </div>
 
                                 :

@@ -46,9 +46,9 @@ const Projects = () => {
                             <div className='md:flex md:flex-col gap-5 md:space-y-4 md:justify-center'>
                                 <p className='mt-4 text-2xl blg:text-3xl text-center md:text-left font-semibold blue-gradient_text'>{project.title}</p>
                                 <p className='text-base blg:text-lg blg:w-[450px] mt-4 text-center md:pr-2 md:w-[350px] md:text-left'>{project.description}</p>
-                                <div id="buttons" className='mt-5 flex justify-center md:justify-start gap-3'>
-                                    <a href={`https://github.com/Jasmeet5108/${project.githubURL}`} target='_blank' className='gradient-box text-white rounded py-2 px-3 hover:cursor-pointer'>Code on Github</a>
-                                    <a href={`https://${project.liveURL}.vercel.app`} target='_blank' className='gradient-box text-white rounded py-2 px-3 hover:cursor-pointer'>See live version</a>
+                                <div id="buttons" className='mt-5 flex justify-center md:justify-start gap-6'>
+                                    <a href={`https://github.com/Jasmeet5108/${project.githubURL}`} target='_blank' className='gradient-box text-white rounded text-sm sm:text-base py-2 px-3 hover:cursor-pointer'>Code on Github</a>
+                                    <a href={`https://${project.liveURL}.vercel.app`} target='_blank' className='gradient-box text-white rounded py-2 px-3 text-sm sm:text-base hover:cursor-pointer'>See live version</a>
                                 </div>
                             </div>
                         </div>

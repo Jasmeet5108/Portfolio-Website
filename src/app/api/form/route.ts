@@ -12,5 +12,5 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
     const { name, email, message } = await request.json()
     const newUser = await User.create({ name, email, message })
-    return NextResponse.json({ msg: "Success", NewUser: newUser })
+    return NextResponse.json({ success: true, msg: "Message delivered", NewUser: newUser })
 }
