@@ -33,7 +33,7 @@ const Contact = () => {
                 toast.success("Message delivered", {
                     duration: 2500,
                     position: 'top-center',
-                    className: "mt-12 text-white bg-black text-base w-[250px] lg:text-xl lg:w-[500px]",
+                    className: "mt-10 text-white bg-black text-base w-[220px] lg:text-xl lg:w-[500px]",
                 })
             }
             formRef.current?.reset()
